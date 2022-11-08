@@ -470,17 +470,16 @@ class StarField {
 }
 function setup() {
     let canvas = document.getElementById('canvas');
-    const howManyStars = 1000;
-    if (IS_MOBILE)
-        howManyStars = 500;
+    const howManyStars = 700;
+    // if (IS_MOBILE)
+    //     howManyStars = 500;
     let starfield = new StarField(howManyStars, canvas);
     starfield.startRenderLoop();
     let UIToggleButton = document.getElementById('ui-button');
-
     // UIToggleButton.addEventListener('click', (e) => {
     //     starfield.showMouseControls = !starfield.showMouseControls;
     //     if (starfield.showMouseControls) {
-    //         starfield.mouseControlAlpha = 0;
+    //         starfield.mouseControlAlpha = 0.3;
     //         UIToggleButton.classList.remove('off');
     //     }
     //     else {
